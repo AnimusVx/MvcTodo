@@ -38,7 +38,9 @@ namespace MvcTodo.Services
 
         public IEnumerable<SelectListItem> PrioritySelectListItems()
         {
-            return _db.Todos.Select(x => new SelectListItem
+            List<Todo> todoList = new List<Todo>();
+            for(int i=1; i<=3; i++) { todoList.Add(new Todo()); todoList[i - 1].Priority = (byte)i; }
+            return todoList.Select(x => new SelectListItem
             {
                 Value = x.Priority.ToString(),
                 Text = x.PrioratyText
