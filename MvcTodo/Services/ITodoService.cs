@@ -15,9 +15,10 @@ namespace MvcTodo.Services
         //Add
         void Add(Todo todo);
         //Update
-        void Update (Todo todo);
+        void Update(Todo todo);
         //Prioraty SelectListItem
-        IEnumerable<SelectListItem> PrioritySelectListItems();
+        //IEnumerable<SelectListItem> PrioritySelectListItems();
+
         //Todo done
         void SetDone(int id);
     }
