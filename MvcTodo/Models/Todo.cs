@@ -6,7 +6,7 @@ namespace MvcTodo.Models
 {
     public class Todo
     {
-        public enum PriortyText
+        public enum PriorityText
         {
             Relax,
             Secondary,
@@ -33,7 +33,7 @@ namespace MvcTodo.Models
         [Required]
         // [Range(1, 3, ErrorMessage = "Select prioraty correct")]
         // public byte Priority { get; set; } = 1;
-        public PriortyText Priorty { get; set; } = PriortyText.Relax;
+        public PriorityText Priority { get; set; } = PriorityText.Relax;
 
         //[NotMapped]
         //public string PrioratyText { get { if (Priority == 1) return "Relax"; else if (Priority == 2) return "Secondary"; return "Immediate"; }}
