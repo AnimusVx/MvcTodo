@@ -8,7 +8,7 @@ namespace MvcTodo.Services
     {
         private AppDbContext _db;
         public TodoService(AppDbContext db) { _db = db; }
-
+        // DI (dependancy injection) kısmı yukarıda. Constructor'ında private atama. 
         public void Add(Todo todo)
         {
             _db.Add(todo);
